@@ -29,16 +29,5 @@ main {
     padding: 15px;
     border:2px solid black;
     border-radius: 8px;
-}
-
-#decrease {
-    float: left;
-}
-
-#reset {
-    float: left;
-}
-
-#increase {
     float: left;
 }
