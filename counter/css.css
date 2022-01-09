@@ -24,12 +24,18 @@ main {
 }
 
 .buttons {
-    width:80px;
-    margin: 0px 5px;
+    width:100px;
+    margin: 5px 5px;
     padding: 15px;
+    box-sizing: border-box;
     border:2px solid black;
     border-radius: 8px;
     float: left;
+}
+
+.buttons:last-child {
+    width: 320px;
+    clear: both;
 }
 
 footer {
