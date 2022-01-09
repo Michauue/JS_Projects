@@ -1,6 +1,6 @@
 const numb = document.querySelector('.numb');
 const number = document.getElementById('number');
-const cygan = document.getElementById('img');
+const picture = document.getElementById('img');
 
 function onDec() {
     numb.textContent = parseInt(numb.textContent)-1;
@@ -24,8 +24,8 @@ function checkValue() {
         number.style.color = "black";
     }
     if (parseInt(numb.textContent) == 12) {
-        cygan.style.visibility = "visible";
+        picture.style.visibility = "visible";
     } else {
-        cygan.style.visibility = "hidden";
+        picture.style.visibility = "hidden";
     }
 }
