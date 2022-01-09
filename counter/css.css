@@ -1,4 +1,44 @@
 body {
-    margin: 30px;
+    margin: 100px;
     background-color: wheat;
+    font-family: fantasy;
+}
+
+#counter h2 {
+    font-size: 60;
+}
+
+#number h1 {
+    font-size: 100;
+}
+
+main {
+    width:100%;
+    text-align: center;
+}
+
+#buttons {
+    display: inline-block;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.buttons {
+    width:80px;
+    margin: 0px 5px;
+    padding: 15px;
+    border:2px solid black;
+    border-radius: 8px;
+}
+
+#decrease {
+    float: left;
+}
+
+#reset {
+    float: left;
+}
+
+#increase {
+    float: left;
 }
