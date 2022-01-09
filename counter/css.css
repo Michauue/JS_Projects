@@ -31,3 +31,13 @@ main {
     border-radius: 8px;
     float: left;
 }
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer img {
+    border: 8px dotted black;
+    visibility: hidden;
+}
