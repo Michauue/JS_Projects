@@ -1,9 +1,31 @@
-const number = document.querySelector('.numb');
-
-let temp = parseInt(number.textContent);
-
-console.log(temp);
+const numb = document.querySelector('.numb');
+const number = document.getElementById('number');
+const cygan = document.getElementById('img');
 
 function onDec() {
-    number.textContent = parseInt(number.textContent)-1;
+    numb.textContent = parseInt(numb.textContent)-1;
+    checkValue();
+}
+function onRes() {
+    numb.textContent = 0;
+    checkValue();
+}
+function onInc() {
+    numb.textContent = parseInt(numb.textContent)+1;
+    checkValue();
+}
+
+function checkValue() {
+    if (parseInt(numb.textContent) > 0) {
+        number.style.color = "green";
+    } else if (parseInt(numb.textContent) < 0) {
+        number.style.color = "red";
+    } else {
+        number.style.color = "black";
+    }
+    if (parseInt(numb.textContent) == 12) {
+        cygan.style.visibility = "visible";
+    } else {
+        cygan.style.visibility = "hidden";
+    }
 }
